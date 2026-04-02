@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE `contact_messages` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`name` varchar(128) NOT NULL,\n\t`email` varchar(320) NOT NULL,\n\t`phone` varchar(32),\n\t`subject` varchar(256),\n\t`message` text NOT NULL,\n\t`productId` int,\n\t`read` boolean NOT NULL DEFAULT false,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `contact_messages_id` PRIMARY KEY(`id`)\n);\nALTER TABLE `contact_messages` ADD CONSTRAINT `contact_messages_productId_products_id_fk` FOREIGN KEY (`productId`) REFERENCES `products`(`id`) ON DELETE no action ON UPDATE no action;\nALTER TABLE `products` ADD CONSTRAINT `products_categoryId_categories_id_fk` FOREIGN KEY (`categoryId`) REFERENCES `categories`(`id`) ON DELETE no action ON UPDATE no action",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3iwigCHg3CcE1PJ.root --database PThi8BHL38Un8J878g3nSp --execute CREATE TABLE `contact_messages` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`name` varchar(128) NOT NULL,\n\t`email` varchar(320) NOT NULL,\n\t`phone` varchar(32),\n\t`subject` varchar(256),\n\t`message` text NOT NULL,\n\t`productId` int,\n\t`read` boolean NOT NULL DEFAULT false,\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `contact_messages_id` PRIMARY KEY(`id`)\n);\nALTER TABLE `contact_messages` ADD CONSTRAINT `contact_messages_productId_products_id_fk` FOREIGN KEY (`productId`) REFERENCES `products`(`id`) ON DELETE no action ON UPDATE no action;\nALTER TABLE `products` ADD CONSTRAINT `products_categoryId_categories_id_fk` FOREIGN KEY (`categoryId`) REFERENCES `categories`(`id`) ON DELETE no action ON UPDATE no action",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1893
+}

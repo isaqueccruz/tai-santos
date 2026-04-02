@@ -1,0 +1,12 @@
+.git
+.gitignore
+README.md
+.env.local
+.env.*.local
+node_modules
+.pnpm-store
+coverage
+.vitest
+dist
+.manus-logs
+screenshots

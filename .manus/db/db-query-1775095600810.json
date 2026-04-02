@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO categories (name, slug, description) VALUES\n('Bolos de Casamento', 'bolos-de-casamento', 'Bolos elegantes e personalizados para o dia mais especial'),\n('Bolos de Aniversário', 'bolos-de-aniversario', 'Celebre com estilo e sabor'),\n('Bolos Temáticos', 'bolos-tematicos', 'Criações únicas para cada tema e ocasião'),\n('Doces Finos', 'doces-finos', 'Brigadeiros gourmet, trufas e muito mais'),\n('Tortas', 'tortas', 'Tortas artesanais doces e salgadas')",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3iwigCHg3CcE1PJ.root --database PThi8BHL38Un8J878g3nSp --execute INSERT INTO categories (name, slug, description) VALUES\n('Bolos de Casamento', 'bolos-de-casamento', 'Bolos elegantes e personalizados para o dia mais especial'),\n('Bolos de Aniversário', 'bolos-de-aniversario', 'Celebre com estilo e sabor'),\n('Bolos Temáticos', 'bolos-tematicos', 'Criações únicas para cada tema e ocasião'),\n('Doces Finos', 'doces-finos', 'Brigadeiros gourmet, trufas e muito mais'),\n('Tortas', 'tortas', 'Tortas artesanais doces e salgadas')",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 500
+}
